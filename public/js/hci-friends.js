@@ -5,6 +5,16 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$(".name").click(function(event){
+	console.log("hey");
+	event.preventDefault();
+	var name = $(this).text();
+	var newName = anagrammedName(name);
+	$(this).text(newName);
+}
+);
+
+
 /*
  * Function that is called when the document is ready.
  */
